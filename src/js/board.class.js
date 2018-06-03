@@ -1,14 +1,13 @@
 class Board {
 
     constructor (selector) {
-        this.selector = selector;
+        this.container = $(selector);
     }
 
     render (elements) {
-        const container = $(this.selector);
-        container.empty();
+        this.container.empty();
         elements.forEach((element, index) => {
-            container.append($(`
+            this.container.append($(`
                 <div class="element-${element}" data-index="${index}"></div>
             `))
         })
