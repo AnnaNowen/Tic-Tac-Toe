@@ -1,0 +1,24 @@
+.board {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.board > * {
+    width: 33%;
+    padding: 1px;
+}
+
+.board .element-0 {
+    background-color: #eee;
+}
+
+.board .element-1 {
+    background-color: lightskyblue;
+}
+
+.board .element-2 {
+    background-color: rgba(255, 0, 0, 0.5);
+}
