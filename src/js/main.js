@@ -21,6 +21,13 @@ $(() => {
                     board.container.off('click');
                     playButton.prop('disabled', false);
 
+                } else if (engine.isDraw()) {
+                    setTimeout(() => {
+                        alert(`Draw!`);
+                    });
+                    board.container.off('click');
+                    playButton.prop('disabled', false);
+
                 } else {
                     engine.updatePlayer();
                 }

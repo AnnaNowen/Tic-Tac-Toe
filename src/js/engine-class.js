@@ -67,7 +67,15 @@ class Engine {
         ].some(value => this.hasAll(value))
     }
 
+    isDraw() {
+        return !this.hasNotPlayed();
+    }
+
     hasAll (wins) {
         return wins.every(value => this._board[value] === this._currentPlayer)
+    }
+
+    hasNotPlayed() {
+        return this._board.some(value => value === EngineConstants.notPlayed);
     }
 }
