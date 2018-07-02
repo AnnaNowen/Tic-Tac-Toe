@@ -5,11 +5,30 @@
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="src/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div class="board"></div>
+<main class="container">
+    <div class="row">
+        <div class="col-12 offset-lg-1 col-lg-10 offset-xl-2 col-xl-8">
+            <h1>Tic Tac Toe</h1>
+        </div>
+        <div class="col-12 offset-lg-1 col-lg-10 offset-xl-2 col-xl-8">
+            <div class="board-container">
+                <div class="board"></div>
+            </div>
+        </div>
+
+        <div class="row col-12 offset-lg-1 col-lg-10 offset-xl-2 col-xl-8 justify-content-end mt-2">
+            <button class="btn btn-lg btn-primary" type="submit" id="play-btn">Play Tic-Tac-Toe</button>
+        </div>
+    </div>
+</main>
 <script src="src/js/lib/jquery-3.3.1.min.js"></script>
 <script src="src/js/lib/bootstrap.min.js"></script>
+<script src="src/js/engine-constants.class.js"></script>
+<script src="src/js/engine-class.js"></script>
 <script src="src/js/board.class.js"></script>
 <script src="src/js/main.js"></script>
 </body>

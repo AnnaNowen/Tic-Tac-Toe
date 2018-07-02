@@ -1,24 +1,32 @@
+.board-container {
+    height: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+}
+
 .board {
+    background: #eee;
     display: flex;
-    height: 400px;
-    width: 400px;
     flex-wrap: wrap;
-    margin: auto;
+    height: 100%;
+    position: absolute;
+    width: 100%;
 }
 
-.board > * {
-    width: 33%;
-    padding: 1px;
-}
-
-.board .element-0 {
+.board .element {
     background-color: #eee;
+    border: 1px solid white;
+    padding: 1px;
+    width: calc(100% / 3);
 }
 
 .board .element-1 {
-    background-color: lightskyblue;
+    background: #eee url("images/x.svg.png") no-repeat;
+    background-size: cover;
 }
 
 .board .element-2 {
-    background-color: rgba(255, 0, 0, 0.5);
+    background: #eee url("images/o.svg.png") no-repeat center;
+    background-size: cover;
 }
